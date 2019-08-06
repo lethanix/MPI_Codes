@@ -36,7 +36,7 @@ program pi_mpi
 	call mpi_comm_rank(mpi_comm_world, this_process, &
 		error_number)
 
-	n = 100000000
+	n = 100000000	! Starts with 1E8
 	fortran_internal_pi = 4.0_dp*atan(1.0_dp)
 
 	if (this_process==0) then

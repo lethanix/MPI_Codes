@@ -43,7 +43,7 @@
           print 100, n, time_difference()
           print 110, total_pi, abs(total_pi-fortran_internal_pi)
        end if
-       n = n*10
+       ! n = n*10
     end do
     call mpi_finalize(error_number)
 100 format (' N intervals = ', i12, ' time = ', f8.3)
